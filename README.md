@@ -11,8 +11,8 @@ This guide provides step-by-step instructions to set up and operate the Franka E
 
 2. **Connect to the Robot**
    - Access the robot's interface by navigating to one of the following IP addresses on the connected Ethernet network:
-     - **Paperino Franka**: `172.16.0.3`
-     - **Topolino Franka**: `172.16.0.4`
+     - **Franka Paperino**: `172.16.0.3`
+     - **Franka Pippo**: `172.16.0.4`
 
 3. **Log In**
    - Enter the robot interface using your assigned username and password.
@@ -21,7 +21,7 @@ This guide provides step-by-step instructions to set up and operate the Franka E
    - Unlock the robot’s joints. _(Note: This process may require several attempts.)_
 
 5. **Activate FCI**
-   - Enable the Franka Control Interface (FCI) and confirm communication with ROS.
+   - Enable the Franka Control Interface (FCI) that enables the communication with ROS.
 
 ---
 
@@ -33,7 +33,7 @@ Run the following command to reset the robot to its home position:
 roslaunch franka_example_controllers move_to_start.launch robot_ip:=172.16.0.3
 ```
 
-- Replace `172.16.0.3` with the appropriate IP if using Topolino Franka.
+- Replace `172.16.0.3` with the appropriate IP if using Franka Pippo.
 - _(Note: This step may require multiple attempts to complete successfully.)_
 
 ---
@@ -45,7 +45,7 @@ roslaunch franka_example_controllers move_to_start.launch robot_ip:=172.16.0.3
 1. Navigate to the appropriate workspace:
 
 ```bash
-cd haria_ros/haria_ws
+cd haria_ROS/haria_ws
 source devel/setup.bash
 cd experiment_execution
 ```
